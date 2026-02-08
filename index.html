@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For My Love – Sahasi ❤️</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <style>
+    *{box-sizing:border-box}
+    body{margin:0;font-family:'Poppins',sans-serif;background:linear-gradient(135deg,#ff758c,#ff7eb3,#fad0c4);color:#fff;overflow-x:hidden}
+    section{min-height:100vh;display:flex;justify-content:center;align-items:center;flex-direction:column;padding:40px 20px;text-align:center}
+    h1.title{font-family:'Great Vibes',cursive;font-size:70px;animation:glow 3s infinite alternate}
+    @keyframes glow{from{text-shadow:0 0 10px #fff}to{text-shadow:0 0 25px #ff1e56,0 0 40px #ff1e56}}
+    .name-anim span{animation:floatName 2s ease-in-out infinite alternate;display:inline-block}
+    @keyframes floatName{from{transform:translateY(0)}to{transform:translateY(-10px)}}
+    .card{background:rgba(255,255,255,.15);backdrop-filter:blur(8px);padding:35px;border-radius:25px;max-width:1000px;box-shadow:0 10px 25px rgba(0,0,0,.3)}
+    .btn{margin-top:25px;padding:14px 36px;border-radius:50px;background:#ff1e56;border:none;color:#fff;font-size:18px;cursor:pointer;box-shadow:0 8px 20px rgba(0,0,0,.25)}
+    .btn:hover{transform:scale(1.05)}
+    .heart{position:fixed;bottom:-10px;color:#ff1e56;font-size:20px;animation:float 7s linear infinite}
+    @keyframes float{0%{transform:translateY(0);opacity:1}100%{transform:translateY(-120vh);opacity:0}}
+    .chat{text-align:left}
+    .bubble{background:rgba(255,255,255,.25);padding:14px 18px;border-radius:20px;margin:10px 0;max-width:80%}
+    .me{align-self:flex-end;background:rgba(255,255,255,.4)}
+    .timeline{display:grid;grid-template-columns:1fr;gap:15px;text-align:left}
+    .time{background:rgba(255,255,255,.25);padding:16px 20px;border-radius:18px}
+    .typing{font-size:20px;line-height:1.9;min-height:220px;white-space:pre-wrap}
+    .hidden{display:none}
+    .firework{position:fixed;width:6px;height:6px;border-radius:50%;background:#fff;animation:boom 1s linear forwards}
+    @keyframes boom{to{transform:scale(25);opacity:0}}
+
+    /* Memory Game */
+    .game{display:grid;grid-template-columns:repeat(4,70px);gap:12px;justify-content:center}
+    .card-game{width:70px;height:70px;background:#ff1e56;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:30px;cursor:pointer}
+
+    .easter{position:fixed;bottom:10px;right:15px;font-size:12px;opacity:.3;cursor:pointer}
+  </style>
+</head>
+<body>
+
+<!-- Custom Romantic Song -->
+<audio autoplay loop>
+  <source src="https://cdn.pixabay.com/audio/2022/10/18/audio_29d3fd7f20.mp3" type="audio/mpeg">
+</audio>
+
+<section>
+  <h1 class="title name-anim">For <span>S</span><span>a</span><span>h</span><span>a</span><span>s</span><span>i</span> ❤️</h1>
+  <h2>From Bishwa Ghimire</h2>
+  <p>Scroll slowly and feel every heartbeat…</p>
+  <button class="btn" onclick="scrollToId('chat')">Our Story 💬</button>
+</section>
+
+<section id="chat">
+  <div class="card chat">
+    <div class="bubble">Happy birthday Sahasi... 🥳🎂</div>
+    <div class="bubble me">Thank you Bishwa😌 </div>
+    <div class="bubble">from birthday wish to valentine wish ahhhhhhhhhh it was sooo relaxing full of ups and downs and very unpredictable but we did it....💪🏼💪🏼yessssssssss hurryahhhhhhhhhhhh🎉🎉🍾🍾❤️🫶🏼</div>
+    <div class="bubble me">I love you sanii ❤️🥹(2082/03/21  4:23pm) <br> (My heart's condition 💓💓💓💓)</div>
+    <div class="bubble">I love youu tooo sanaaa💖(2082/03/21  4:36pm) 
+<br>The moment when my heart left my body because it was an first experience for me..😌😭❤️</div>
+    <div class="bubble me">Aww 🫶 this was the best journey i've ever experienced in my life thank you My love(Meri sanii) for all these loveeeeeeeeeeeeeee care and each and every moment together❤️❤️</div>
+    <div class="bubble">Since then, every heartbeat whispers your name.. every breath reminds your smile...Can't imagine my single day without you Sweetuuuuuuuu Darlingg..❤️🫶🏼🫶🏼🫶🏼🫶🏼❤️</div>
+  </div>
+  <button class="btn" onclick="scrollToId('timeline')">Our Timeline ⏳</button>
+</section>
+
+<section id="timeline">
+  <div class="card">
+    <h2>💖 Our Relationship Timeline</h2>
+    <div class="timeline">
+      <div class="time">🌱 First Conversation – The moment our story quietly began.</div>
+      <div class="time">💬 Late Night Talks – Where we truly started understanding each other.</div>
+      <div class="time">🤍 Growing Feelings – When care turned into love.</div>
+      <div class="time">💞 2082/03/21 – The day that changed everything forever.</div>
+      <div class="time">🌈 Today – Still choosing each other, every single day.</div>
+      <div class="time">♾️ Forever – A future I want only with you.</div>
+    </div>
+  </div>
+  <button class="btn" onclick="scrollToId('typing')">Love Letter ✨</button>
+</section>
+
+<section id="typing">
+  <div class="card">
+    <h2>✨ A Letter From My Heart</h2>
+    <div id="typeBox" class="typing"></div>
+  </div>
+  <button class="btn" onclick="scrollToId('game')">Mini Love Game 💞</button>
+</section>
+
+<section id="game">
+  <div class="card">
+    <h2>💞 Memory Game – Find the Matching Hearts</h2>
+    <div class="game" id="gameBoard"></div>
+    <p id="gameStatus"></p>
+  </div>
+  <button class="btn" onclick="scrollToId('secret')">One More Secret 💌</button>
+</section>
+
+<section id="secret">
+  <div class="card">
+    <h2>💌 A Secret Message</h2>
+    <button class="btn" onclick="toggleSecret()">Tap to Reveal ✨</button>
+    <p id="secretMsg" class="hidden">Sanii, if love had a name, it would be yours. In every lifetime, in every universe, my heart would still find its way to you. You are my miracle, my peace, my forever. ❤️</p>
+  </div>
+  <button class="btn" onclick="scrollToId('proposal')">Final Surprise 🎁</button>
+</section>
+
+<section id="proposal">
+  <h1>💍 Will You Be My Valentine, Saniii💞?</h1>
+  <h2>And Stay With Me Forever? 🥹</h1>
+  <button class="btn" onclick="yesAnswer()">YES 💖</button>
+  <button class="btn" id="noBtn" onmouseover="moveNo()">NO 🙈</button>
+</section>
+
+<section id="final" class="hidden">
+  <div class="card">
+    <h1 class="title">I Love You Forever ❤️</h2>
+    <p>Merii Sanii Merii Mutuu Merii Babeeee😘❤️, this website is just a tiny reflection of my love for you. You are my today, my tomorrow, and my forever. Thank you for choosing me.(2 din ko nindraa faleraa banakoo xuu man parxaa vanni aash xaa sayed parxaa pani holaa😌 aaba yetii vayesii bolna pako bela ramrarii bolnu hunxaa ki hajurrr😭.. aaja propose day ko din rati ratii yo code lekhdaa nii, I was imagining you by my side, resting your head on my shoulders and gossiping with me🥺😭..... This is a normal effort from my side... I promise to make your life full of surprise and entertainment ahead 😌 aaba propose day ko din lekheko chocolate day ko din hernu hunxaa holaa hajur le taa.. tara kae vayena hajur ko chocolate day ko vaye ni bihana ramroo banauni prayaas xaa mero raa saddhai mh sanga huda ko din ramro banaunii prayaas rahi rahane xaa.. Love you sooooooooooooo much mayaaa❤️aaba taa hug raa kiss dinaa lai kanjus hunnan holaa koii koii 😌😆❤️❤️)
+<br>
+– Your Sanaaa 💞</p>
+  </div>
+</section>
+
+<div class="easter" onclick="alert('🐣 Easter Egg: I will always love you Sanii merii mutuu, in every universe ❤️')">❤</div>
+
+<script>
+  function scrollToId(id){document.getElementById(id).scrollIntoView({behavior:'smooth'})}
+  function createHeart(){const h=document.createElement('div');h.className='heart';h.innerHTML='❤';h.style.left=Math.random()*100+'vw';document.body.appendChild(h);setTimeout(()=>h.remove(),7000)}
+  setInterval(createHeart,300)
+
+  const letter = `My dearest Sanii💞, From the very first moment you came into my life, everything started to feel brighter, warmer, and more meaningful. You slowly became my favorite thought in every quiet moment and my happiest reason to smile in every busy day. Your presence has turned ordinary days into beautiful memories and simple moments into priceless treasures. Every time I think about you, my heart feels calm, safe, and full of hope. You are not just someone I love, you are someone who completes me in ways I never knew I needed. The way you care, the way you understand me, and the way you stay beside me even in my weakest moments makes me realize how lucky I truly am. With you, I have learned what real love means. It is patience, trust, respect, laughter, and standing together no matter how hard the days become. Our special date, 2082/03/21, will always stay close to my heart, because it marks the beginning of a journey that I want to continue forever. Sanii, you are my peace in chaos, my strength in weakness, my happiness in sadness, and my comfort in silence. I dream of a future where we walk side by side, chasing our dreams, supporting each other, and building a life full of love, memories, and endless smiles. No matter how far life takes us, I promise to hold your hand through every storm and celebrate every victory with you. I promise to listen, to understand, to care, and to love you more deeply with each passing day. You are my today, my tomorrow, and my always. So today, in this little world I created for you, I want to ask you from the deepest part of my heart... Will you stay with me, love me, and be my forever?
+With all my love, Bishwa 💖`;
+  let i=0;
+  function typeEffect(){if(i<letter.length){document.getElementById('typeBox').innerHTML+=letter.charAt(i);i++;setTimeout(typeEffect,35)}}
+  window.addEventListener('scroll',()=>{const el=document.getElementById('typing');const rect=el.getBoundingClientRect();if(rect.top<window.innerHeight-100){typeEffect()}})
+
+  function toggleSecret(){document.getElementById('secretMsg').classList.toggle('hidden')}
+
+  function yesAnswer(){
+    for(let i=0;i<80;i++){const f=document.createElement('div');f.className='firework';f.style.left=Math.random()*100+'vw';f.style.top=Math.random()*100+'vh';document.body.appendChild(f);setTimeout(()=>f.remove(),1000)}
+    document.getElementById('final').classList.remove('hidden');
+    scrollToId('final');
+  }
+
+  function moveNo(){const btn=document.getElementById('noBtn');btn.style.position='absolute';btn.style.left=Math.random()*80+'vw';btn.style.top=Math.random()*80+'vh'}
+
+  // Memory Game
+  const icons=['❤','💖','💘','💝','❤','💖','💘','💝'];
+  let shuffled=icons.sort(()=>0.5-Math.random());
+  let first=null,lock=false,matched=0;
+  const board=document.getElementById('gameBoard');
+  shuffled.forEach(icon=>{
+    const div=document.createElement('div');
+    div.className='card-game';
+    div.dataset.icon=icon;
+    div.innerHTML='?';
+    div.onclick=()=>{
+      if(lock||div.innerHTML!=='?')return;
+      div.innerHTML=icon;
+      if(!first){first=div}
+      else{
+        if(first.dataset.icon===icon){matched+=2;first=null;if(matched===icons.length){document.getElementById('gameStatus').innerText='You found all pairs! Just like we found each other ❤️'}}
+        else{lock=true;setTimeout(()=>{div.innerHTML='?';first.innerHTML='?';first=null;lock=false},700)}
+      }
+    }
+    board.appendChild(div)
+  })
+</script>
+
+</body>
+</html>
